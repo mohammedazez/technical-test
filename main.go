@@ -39,6 +39,14 @@ func PrintTriangle(n int) string {
 	return result
 }
 
+// Nomor 4
+func Factorial(n int) int {
+	if n == 0 || n == 1 {
+		return 1
+	}
+	return n * Factorial(n-1)
+}
+
 func main() {
 	// IsPalindrome
 	fmt.Println("Number 1")
@@ -59,4 +67,8 @@ func main() {
 	fmt.Println(PrintTriangle(5))
 	fmt.Println("----------------------------------")
 
+	// Factorial
+	fmt.Println("Number 4")
+	fmt.Println(Factorial(5))
+	fmt.Println("----------------------------------")
 }
