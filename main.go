@@ -27,15 +27,36 @@ func FindMax(arr []int) int {
 	return max
 }
 
+// Nomor 3
+func PrintTriangle(n int) string {
+	var result string
+	for i := 1; i <= n; i++ {
+		for j := 1; j <= i; j++ {
+			result += "*"
+		}
+		result += "\n"
+	}
+	return result
+}
+
 func main() {
 	// IsPalindrome
+	fmt.Println("Number 1")
 	fmt.Println(IsPalindrome("abba"))
 	fmt.Println(IsPalindrome("kodok"))
 	fmt.Println(IsPalindrome("radar"))
 	fmt.Println(IsPalindrome("hello"))
+	fmt.Println("----------------------------------")
 
 	// FindMax
+	fmt.Println("Number 2")
 	input := []int{3, 5, 1, 9, 2}
 	fmt.Println(FindMax(input))
+	fmt.Println("----------------------------------")
+
+	// PrintTriangle
+	fmt.Println("Number 3")
+	fmt.Println(PrintTriangle(5))
+	fmt.Println("----------------------------------")
 
 }
